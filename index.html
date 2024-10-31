@@ -11,158 +11,188 @@
     <header>
         <div class="container-header">
             <nav class="nav-bar">
-                <h1>Tennis Basketball</h1>
-                  <img class="img-logo" src="assets/logo.png" alt="logo">
-                  <img class="img-cart" src="assets/carrito.png" alt="cart">
+                <h1>
+                    <span class="color1">Tennis</span>
+                    <span class="color2">Basketball</span>
+                </h1>
+                <img class="img-logo" src="assets/logo.png" alt="logo">
+                <button id="open-cart-modal" class="btn-open-modal">Ver Carrito</button>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <div class="container-products">
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
-          
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
+    <main>
 
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
-
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
-
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+        <!-- Modal -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Carrito de Compras</h1>
+                <table id="Cart-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Sub Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-body"></tbody>
+                </table>
+                <h3 id="total">Total: $0</h3>
+                <button id="checkout-button">Checkout</button>
             </div>
         </div>
 
+       
         <div class="container-products">
-            <div>
+            <div data-id="1" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 1</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+            
+            <div data-id="2" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 2</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="3" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 3</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="4" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 4</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="5" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
-
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 5</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
         </div>
-
         <div class="container-products">
-            <div>
+            <div data-id="6" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 6</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+            
+            <div data-id="7" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 7</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="8" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 8</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="9" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 9</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="10" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
-
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 10</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
         </div>
-
         <div class="container-products">
-            <div>
+            <div data-id="11" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 11</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+            
+            <div data-id="12" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 12</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="13" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 13</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="14" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 14</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
 
-            <div>
+            <div data-id="15" data-name="Producto 1" data-price="10">
                 <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
-            </div>
-
-            <div>
-                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
-                <h2>Nombre</h2>
-                <h3>Precio</h3>
-                <button class="btn-buy">Comprar</button>
+                <h2>Producto 15</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
             </div>
         </div>
+        <div class="container-products">
+            <div data-id="16" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 16</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+            
+            <div data-id="17" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 17</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+
+            <div data-id="18" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 18</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+
+            <div data-id="19" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 19</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+
+            <div data-id="20" data-name="Producto 1" data-price="10">
+                <img class="photo-products" src="assets/tenis-ejem.jpg" alt="photo">
+                <h2>Producto 20</h2>
+                <h3>Precio: $10</h3>
+                <button class="btn-buy">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
 </body>
 </html>
