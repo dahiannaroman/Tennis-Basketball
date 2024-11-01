@@ -16,7 +16,7 @@ body{
 
 header {
     width: 100%;
-    background-color:#000000;
+    background-color: #fdc274;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -60,30 +60,30 @@ header {
 }
 
 .color2 {
-    color: #fdfffd; /* Color para la segunda parte */
+    color: #000000; /* Color para la segunda parte */
 }
 
 .container-products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 101%;
     gap: 2px;
     height: 450%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .container-products > div {
     flex: 1 1 150px;
     margin: 7px;
-    background-color: #000000;
+    background-color: #fdc274;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 390px;
     justify-content: center;
-    color: #ffffff;
+    color: #050505;
     font-size: 13px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .photo-products {
@@ -102,11 +102,13 @@ table {
     border-spacing: 0;
     width: 100%;
     border: 1px solid #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   th, td {
     text-align: left;
     padding: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   th {
@@ -114,7 +116,8 @@ table {
   }
   
   tr:nth-child(even) {
-    background-color: #fedcaa;
+    background-color: #fdc274;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   /* Estilo del modal */
@@ -146,6 +149,7 @@ table {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    
 }
 
 .close:hover,
@@ -156,22 +160,46 @@ table {
 }
 
 .btn-open-modal {
-    width: 120px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
     position: relative;
     left: 45rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:  #fc7f13;
     border-radius: 30px;
+    border: #fc7f13;
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
 }
 
 .btn-buy {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 120px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
     background-color: #fc7f13;
     border-radius: 30px;
     border: #fc7f13;
-    margin: 10px;
+    margin: 5px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+}
+
+.modal-content > h1, h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-checkout{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 130px;
+    height: 40px;
+    background-color: #fc7f13;
+    border-radius: 30px;
+    border: #fc7f13;
+    margin: 5px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
 }
 
